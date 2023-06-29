@@ -27,7 +27,9 @@ jobs:
       matrix:
         include:
           - build_variant: "mt7621"
-            targets: "K2P_nano K2P DIR-878 CR660x JCG-Q20 JDCLOUD-RE-CP-02"
+            targets: "K2P_nano K2P DIR-878 CR660x JCG-Q20"
+            - build_variant: "mt7621-jd"
+            targets: "JDCLOUD-RE-CP-02"
           - build_variant: "mt7621-usb-1"
             targets: "XY-C1 JCG-836PRO JCG-Y2"
           - build_variant: "mt7621-usb-2"
